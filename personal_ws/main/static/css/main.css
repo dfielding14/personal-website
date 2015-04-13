@@ -32,6 +32,7 @@
 }
 .jumbotron .header {
   text-align: center;
+  margin-top: 5em;
 }
 .jumbotron .header h1 {
   color: #fff;
@@ -57,12 +58,18 @@
 .pt-trigger-container {
   width: 100%;
   height: 100%;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 .pt-trigger-container .arrow-buttons img {
   width: 150px;
   height: 100px;
   box-shadow: none;
   position: fixed;
+}
+.pt-trigger-container .arrow-buttons .top {
+  top: -20%;
+  right: 45%;
 }
 .pt-trigger-container .arrow-buttons .right {
   transform: rotate(90deg);

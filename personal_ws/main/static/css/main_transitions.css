@@ -88,33 +88,28 @@ body {
     z-index: 999;
 }
 
-.pt-page h1 {
-    position: absolute;
-    font-weight: 300;
-    font-size: 4.4em;
-    line-height: 1;
-    letter-spacing: 6px;
-    margin: 0;
-    top: 1%;
-    width: 100%;
-    text-align: center;
-    word-spacing: -0.3em;
-}
-
 .pt-page-1 {
-    background: #0ac2d2;
+    background-image: url('../images/TurkishMarbledPaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pt-page-2 {
-    background: #7bb7fa;
+    background-image: url('http://i.imgur.com/0X2Seqq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pt-page-3 {
-    background: #60d7a9;
+    background-image: url('http://i.imgur.com/x3DPfaH.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pt-page-4 {
-    background: #fdc162;
+    background-image: url('http://i.imgur.com/3Eu79zO.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pt-page-5 {

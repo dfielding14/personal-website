@@ -7,36 +7,38 @@
 {% endblock %}
 
 {% block body %}
-    <div class="nav">
-      <div class="container">
-        <ul class="pull-left">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">Personal</a></li>
-        </ul>
-        <ul class="pull-right">
-          <li><a href="#">cv</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </div>
-    </div>
+    <!--<div class="nav">-->
+      <!--<div class="container">-->
+        <!--<ul class="pull-left">-->
+          <!--<li><a href="#">About</a></li>-->
+          <!--<li><a href="#">Research</a></li>-->
+          <!--<li><a href="#">Personal</a></li>-->
+        <!--</ul>-->
+        <!--<ul class="pull-right">-->
+          <!--<li><a href="#">cv</a></li>-->
+          <!--<li><a href="#">contact</a></li>-->
+        <!--</ul>-->
+      <!--</div>-->
+    <!--</div>-->
 
     <div class="jumbotron">
         <div class="pt-wrapper">
             <div class="pt-trigger-container">
                 <div class="arrow-buttons">
-                    <img class="right pt-trigger" data-animation="1" data-goto="2" src="{% static 'main/images/arrow.ico' %}">
-                    <img class="left pt-trigger" data-animation="1" data-goto="3" src="{% static 'main/images/arrow.ico' %}">
-                    <img class="down pt-trigger" data-animation="1" data-goto="4" src="{% static 'main/images/arrow.ico' %}">
+                    <img class="top pt-trigger" data-animation="4" data-goto="1" src="{% static 'main/images/arrow.ico' %}"/>
+                    <img class="right pt-trigger" data-animation="1" data-goto="2" src="{% static 'main/images/arrow.ico' %}"/>
+                    <img class="left pt-trigger" data-animation="2" data-goto="3" src="{% static 'main/images/arrow.ico' %}"/>
+                    <img class="down pt-trigger" data-animation="3" data-goto="4" src="{% static 'main/images/arrow.ico' %}"/>
                 </div>
             </div>
 
                 <div class="pt-page pt-page-1 pt-page-current">
                     <div class="header">
-                        <h1>Drummond Fielding</h1>
+                        <h1>Drummond Fielding</h1><br><br><br>
                         <p>third year graduate student</p>
                         <p>uc berkeley astrophysics</p>
                     </div>
+                </div>
                 <div class="pt-page pt-page-2">
                     <img src='http://apod.nasa.gov/apod/image/1409/cocoonIC5146pelliccia.jpg' style="width: 300px; height: 300px;">
                     <h3>About</h3>
@@ -79,37 +81,5 @@
                 <!-- ... -->
             </div>
         </div>
-    </div> 
-
-
-    <!--<div class="neighborhood-guides">-->
-    <!--<div class="container">-->
-      <!--<h2>Still Under Construction</h2>-->
-        <!--<p>Check back in a few weeks and hopefully I will have all this up to date.</p>-->
-        <!---->
-        <!--<div class="row">-->
-		  <!--<div class="col-md-4">-->
-	        <!--<div class="thumbnail">-->
-              <!--<img src='http://apod.nasa.gov/apod/image/1409/m27_snyder_2150.jpg'>-->
-            <!--</div>-->
-	        <!--&lt;!&ndash;<div class="thumbnail">-->
-              <!--<img src='http://apod.nasa.gov/apod/image/1409/cocoonIC5146pelliccia.jpg'>-->
-            <!--</div>&ndash;&gt;-->
-		  <!--</div>-->
-		  <!--<div class="col-md-4">-->
-	        <!--<div class="thumbnail">-->
-              <!--<img src='http://apod.nasa.gov/apod/image/1104/M101HST-GendlerM.jpg'>-->
-            <!--</div>-->
-	        <!--&lt;!&ndash;<div class="thumbnail">-->
-              <!--<img src='http://goo.gl/vw43v1'>-->
-            <!--</div>&ndash;&gt;-->
-		  <!--</div>-->
-		  <!--<div class="col-md-4">-->
-	        <!--<div class="thumbnail">-->
-              <!--<img src="http://i.imgur.com/DEo5qUE.jpg" >-->
-            <!--</div>-->
-		  <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
+    </div>
 {% endblock %}
