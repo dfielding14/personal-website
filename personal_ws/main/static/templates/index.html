@@ -3,6 +3,7 @@
 
 {% block stylesheets %}
         <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/main_transitions.css' %}" />
 {% endblock %}
 
 {% block body %}
@@ -21,12 +22,18 @@
     </div>
 
     <div class="jumbotron">
-        <div class="container">
-            <div id="pt-main" class="pt-perspective">
-                <div class="pt-page pt-page-1">
+        <div class="pt-wrapper">
+            <div class="pt-trigger-container">
+                <button class="pt-trigger" data-animation="1" data-goto="-1">Go to next page</button>
+                <button class="pt-trigger" data-animation="2" data-goto="-2">Go to previous page</button>
+                <button class="pt-trigger" data-animation="59-60-61-62-63-64-65-66-67" data-goto="-1">Next page - random anims</button>
+                <button class="pt-trigger" data-animation="50-51-52-53-54-55-56-57-58" data-goto="-2">Previous page - random anims</button>
+            </div>
+
+                <div class="pt-page pt-page-1 pt-page-current">
                     <h1>Drummond Fielding</h1>
                     <p>third year graduate student<br>uc berkeley astrophysics</p>
-                </div>
+                    <button class="pt-trigger" data-animation="1" data-goto="-1">Go to next page</button>                </div>
                 <div class="pt-page pt-page-2">
                     <h3>About</h3>
                     <p> Born in New York City, moved to Montclair,
