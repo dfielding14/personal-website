@@ -6,7 +6,7 @@
 
 var PageTransitions = (function () {
 
-    var startPageIndex = 0,
+    var startPageIndex = 1,
         animEndEventNames = {
             'WebkitAnimation'   : 'webkitAnimationEnd',
             'OAnimation'        : 'oAnimationEnd',
@@ -31,7 +31,7 @@ var PageTransitions = (function () {
         // Get all the .pt-wrapper div which is the parent for all pt-div
         $('.pt-wrapper').each( function() {
             var $wrapperDiv = $(this);
-            $wrapperDiv.data('current', 0);
+            $wrapperDiv.data('current', 1);
             $wrapperDiv.data('isAnimating', false);
             $wrapperDiv.children('.pt-page').eq(startPageIndex).addClass('pt-page-current');
         });
@@ -39,8 +39,9 @@ var PageTransitions = (function () {
         // Adding click event to .pt-trigger
         $('.pt-trigger').click(function() {
             $pageTrigger = $(this);
+            var is_origin = $('.pt-page-current').hasClass('pt-page-2');
             Animate($pageTrigger);
-            updateVisibility($pageTrigger.context.className)
+            updateVisibility($pageTrigger.context.className, is_origin)
         });
     }
 
@@ -457,19 +458,32 @@ var PageTransitions = (function () {
         $nextPage.attr('class', $nextPage.data('originalClassList') + ' pt-page-current');
     }
 
-    function updateVisibility(className) {
-        var directionsMap = {'top': '1', 'left': '2', 'right': '3', 'down': '4'};
+    function updateVisibility(className, is_origin) {
+        var directionsMap = {'top': 'down', 'left': 'right', 'right': 'left', 'down': 'top'};
+        var clicked = className.split(' ')[0];
+        if (!is_origin){
+            landingVisbility()
+        } else {
+            $('.pt-trigger').each(function () {
+                var opposite = directionsMap[this.className.split(' ')[0]];
+                if (opposite === clicked) {
+                    $(this).css('visibility', 'visible')
+                } else {
+                    $(this).css('visibility', 'hidden')
+                }
+            });
+        }
+    }
+
+    function landingVisbility() {
         $('.pt-trigger').each(function(){
-            if (this.className === className){
-                $(this).css(
-                    'visibility', 'hidden'
-                )
+            var trigger = this.className.split(' ')[0];
+            if (trigger != 'top'){
+                $(this).css('visibility', 'visible')
             } else {
-                $(this).css(
-                    'visibility', 'visible'
-                )
+                $(this).css('visibility', 'hidden')
             }
-        });
+        })
     }
 
     return {

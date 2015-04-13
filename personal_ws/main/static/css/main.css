@@ -81,26 +81,26 @@
   top: 70%;
   left: 45%;
 }
-.pt-page-1 {
+.pt-page-2 {
   background-image: url('../images/TurkishMarbledPaper.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.pt-page-1 .header {
+.pt-page-2 .header {
   text-align: center;
   margin-top: 5em;
 }
-.pt-page-1 .header h1 {
+.pt-page-2 .header h1 {
   color: #fff;
   font-size: 48px;
   font-family: 'Shift', sans-serif;
   font-weight: bold;
 }
-.pt-page-1 .header p {
+.pt-page-2 .header p {
   font-size: 20px;
   color: #fff;
 }
-.pt-page-2 {
+.pt-page-1 {
   background-image: url('http://i.imgur.com/0X2Seqq.jpg');
   background-repeat: no-repeat;
   background-size: cover;
