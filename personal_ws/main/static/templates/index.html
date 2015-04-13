@@ -24,17 +24,19 @@
     <div class="jumbotron">
         <div class="pt-wrapper">
             <div class="pt-trigger-container">
-                <img class="arrow-button pt-trigger" data-animation="1" data-goto="2" src="{% static 'main/images/arrow.ico' %}">
-                <button class="pt-trigger" data-animation="1" data-goto="-1">Go to next page</button>
-                <button class="pt-trigger" data-animation="2" data-goto="-2">Go to previous page</button>
-                <button class="pt-trigger" data-animation="59-60-61-62-63-64-65-66-67" data-goto="-1">Next page - random anims</button>
-                <button class="pt-trigger" data-animation="50-51-52-53-54-55-56-57-58" data-goto="-2">Previous page - random anims</button>
+                <div class="arrow-buttons">
+                    <img class="right pt-trigger" data-animation="1" data-goto="2" src="{% static 'main/images/arrow.ico' %}">
+                    <img class="left pt-trigger" data-animation="1" data-goto="3" src="{% static 'main/images/arrow.ico' %}">
+                    <img class="down pt-trigger" data-animation="1" data-goto="4" src="{% static 'main/images/arrow.ico' %}">
+                </div>
             </div>
 
                 <div class="pt-page pt-page-1 pt-page-current">
-                    <h1>Drummond Fielding</h1>
-                    <p>third year graduate student<br>uc berkeley astrophysics</p>
-                    <button class="pt-trigger" data-animation="1" data-goto="-1">Go to next page</button>                </div>
+                    <div class="header">
+                        <h1>Drummond Fielding</h1>
+                        <p>third year graduate student</p>
+                        <p>uc berkeley astrophysics</p>
+                    </div>
                 <div class="pt-page pt-page-2">
                     <img src='http://apod.nasa.gov/apod/image/1409/cocoonIC5146pelliccia.jpg' style="width: 300px; height: 300px;">
                     <h3>About</h3>

@@ -30,13 +30,16 @@
   position: relative;
   top: 100px;
 }
-.jumbotron h1 {
+.jumbotron .header {
+  text-align: center;
+}
+.jumbotron .header h1 {
   color: #fff;
   font-size: 48px;
   font-family: 'Shift', sans-serif;
   font-weight: bold;
 }
-.jumbotron p {
+.jumbotron .header p {
   font-size: 20px;
   color: #fff;
 }
@@ -51,16 +54,28 @@
 .learn-more a {
   color: #00b0ff;
 }
-.arrow-button {
+.pt-trigger-container {
+  width: 100%;
+  height: 100%;
+}
+.pt-trigger-container .arrow-buttons img {
   width: 150px;
   height: 100px;
+  box-shadow: none;
+  position: fixed;
 }
-.arrow-button .right {
+.pt-trigger-container .arrow-buttons .right {
   transform: rotate(90deg);
+  top: 25%;
+  right: 0;
 }
-.arrow-button .left {
+.pt-trigger-container .arrow-buttons .left {
   transform: rotate(-90deg);
+  top: 25%;
+  left: 0;
 }
-.arrow-button .down {
+.pt-trigger-container .arrow-buttons .down {
   transform: rotate(180deg);
+  top: 70%;
+  left: 45%;
 }
