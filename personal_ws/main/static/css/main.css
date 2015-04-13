@@ -20,27 +20,21 @@
 .nav li {
   display: inline;
 }
-.jumbotron {
-  background-image: url('../images/TurkishMarbledPaper.jpg');
-  height: 750px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.jumbotron .container {
+.container {
   position: relative;
   top: 100px;
 }
-.jumbotron .header {
+.container .header {
   text-align: center;
   margin-top: 5em;
 }
-.jumbotron .header h1 {
+.container .header h1 {
   color: #fff;
   font-size: 48px;
   font-family: 'Shift', sans-serif;
   font-weight: bold;
 }
-.jumbotron .header p {
+.container .header p {
   font-size: 20px;
   color: #fff;
 }
@@ -68,7 +62,7 @@
   position: fixed;
 }
 .pt-trigger-container .arrow-buttons .top {
-  top: -20%;
+  top: -10%;
   right: 45%;
   visibility: hidden;
 }
@@ -86,4 +80,38 @@
   transform: rotate(180deg);
   top: 70%;
   left: 45%;
+}
+.pt-page-1 {
+  background-image: url('../images/TurkishMarbledPaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pt-page-1 .header {
+  text-align: center;
+  margin-top: 5em;
+}
+.pt-page-1 .header h1 {
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+.pt-page-1 .header p {
+  font-size: 20px;
+  color: #fff;
+}
+.pt-page-2 {
+  background-image: url('http://i.imgur.com/0X2Seqq.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pt-page-3 {
+  background-image: url('http://i.imgur.com/x3DPfaH.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pt-page-4 {
+  background-image: url('http://i.imgur.com/3Eu79zO.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
