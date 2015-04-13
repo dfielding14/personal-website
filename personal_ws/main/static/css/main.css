@@ -70,6 +70,7 @@
 .pt-trigger-container .arrow-buttons .top {
   top: -20%;
   right: 45%;
+  visibility: hidden;
 }
 .pt-trigger-container .arrow-buttons .right {
   transform: rotate(90deg);

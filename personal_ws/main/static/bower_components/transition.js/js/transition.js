@@ -40,6 +40,7 @@ var PageTransitions = (function () {
         $('.pt-trigger').click(function() {
             $pageTrigger = $(this);
             Animate($pageTrigger);
+            updateVisibility($pageTrigger.context.className)
         });
     }
 
@@ -454,6 +455,21 @@ var PageTransitions = (function () {
     function resetPage($nextPage, $currentPage) {
         $currentPage.attr('class', $currentPage.data('originalClassList'));
         $nextPage.attr('class', $nextPage.data('originalClassList') + ' pt-page-current');
+    }
+
+    function updateVisibility(className) {
+        var directionsMap = {'top': '1', 'left': '2', 'right': '3', 'down': '4'};
+        $('.pt-trigger').each(function(){
+            if (this.className === className){
+                $(this).css(
+                    'visibility', 'hidden'
+                )
+            } else {
+                $(this).css(
+                    'visibility', 'visible'
+                )
+            }
+        });
     }
 
     return {
