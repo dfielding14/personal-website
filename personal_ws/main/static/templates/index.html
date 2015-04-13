@@ -2,8 +2,8 @@
 {% load staticfiles %}
 
 {% block stylesheets %}
-        <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'main/css/main_transitions.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css' %}" />
 {% endblock %}
 
 {% block body %}
@@ -24,6 +24,7 @@
     <div class="jumbotron">
         <div class="pt-wrapper">
             <div class="pt-trigger-container">
+                <img class="arrow-button pt-trigger" data-animation="1" data-goto="2" src="{% static 'main/images/arrow.ico' %}">
                 <button class="pt-trigger" data-animation="1" data-goto="-1">Go to next page</button>
                 <button class="pt-trigger" data-animation="2" data-goto="-2">Go to previous page</button>
                 <button class="pt-trigger" data-animation="59-60-61-62-63-64-65-66-67" data-goto="-1">Next page - random anims</button>
@@ -35,6 +36,7 @@
                     <p>third year graduate student<br>uc berkeley astrophysics</p>
                     <button class="pt-trigger" data-animation="1" data-goto="-1">Go to next page</button>                </div>
                 <div class="pt-page pt-page-2">
+                    <img src='http://apod.nasa.gov/apod/image/1409/cocoonIC5146pelliccia.jpg' style="width: 300px; height: 300px;">
                     <h3>About</h3>
                     <p> Born in New York City, moved to Montclair,
                       NJ. Attended Johns Hopkins University in Baltimore,
@@ -46,6 +48,7 @@
 			<!--<p><a href="#">More about what got me where I am</a></p>-->
                 </div>
                 <div class="pt-page pt-page-3">
+                    <img src='http://apod.nasa.gov/apod/image/1104/M101HST-GendlerM.jpg' style="width: 300px; height: 300px;">
                     <h3>Research</h3>
                     <p>I work with Eliot Quataert on the thermodynamic
                       history of gas accreted on to galaxies and
@@ -63,6 +66,7 @@
                     <!--<p><a href="#">In depth descriptions</a></p>-->
                 </div>
                 <div class="pt-page pt-page-4">
+                    <img src="http://i.imgur.com/DEo5qUE.jpg" style="width: 300px; height: 300px;">
                     <h3>Personal</h3>
                     <p>This is sort of a repository for things I do with
                       my spare time and/or find cool and want to
