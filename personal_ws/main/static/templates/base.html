@@ -10,6 +10,11 @@
     <!-- Base Stylesheets -->
         <link rel="stylesheet" type="text/css" href="{% static 'main/bower_components/bootstrap/dist/css/bootstrap.css' %}" />
 
+        <link rel="stylesheet" type="text/css" href="{% static 'main/bower_components/PageTransitions/css/animations.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'main/bower_components/PageTransitions/css/component.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'main/bower_components/PageTransitions/css/default.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'main/bower_components/PageTransitions/css/multilevelmenu.css' %}" />
+
     <!-- Site Stylesheets -->
         {% block stylesheets %}
         {% endblock %}
@@ -24,6 +29,9 @@
 <!-- Base Scripts -->
     <script type="text/javascript" src="{% static 'main/bower_components/jquery/dist/jquery.js' %}"></script>
     <script type="text/javascript" src="{% static 'main/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'main/bower_components/PageTransitions/js/jquery.dlmenu.js' %}"></script>
+    <script type="text/javascript" src="{% static 'main/bower_components/PageTransitions/js/pagetransitions.js' %}"></script>
 
 <!-- Site Scripts -->
     {% block scripts %}
