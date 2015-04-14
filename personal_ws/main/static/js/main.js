@@ -7,16 +7,28 @@ $(document).ready(function() {
 
     // Arrow Keys
     var directionMap = {37: '.left', 39: '.right', 40: '.down', 38: '.top'};
-    var in_queue = false;
+    var inQueue = false;
 
     $("body").keydown(function(e) {
-        if (e.keyCode <= 40 && e.keyCode >= 37) {
-            if (!in_queue) {
-                in_queue = true;
+        if (!inQueue) {
+            if (e.keyCode <= 40 && e.keyCode >= 37) {
                 var direction = directionMap[e.keyCode];
-                if ($(direction).css('visibility') == 'visible') {
+                var availableTriggers = [];
+                $('.pt-trigger').each(function(){
+                    if ($(this).css('visibility') == 'visible') {
+                        availableTriggers.push(this.className.split(' ')[0])
+                    }
+                });
+                var transition = false;
+                for (var i = 0; i < availableTriggers.length; i++) {
+                    if ("." + availableTriggers[i] == direction) {
+                        transition = true;
+                    }
+                }
+                if (transition) {
+                    inQueue = true;
                     $(direction).trigger('click');
-                    setTimeout(function(){ in_queue = false}, 1000);
+                    setTimeout(function(){ inQueue = false}, 1000);
                 }
             }
         }
