@@ -467,9 +467,13 @@ var PageTransitions = (function () {
             $('.pt-trigger').each(function () {
                 var opposite = directionsMap[this.className.split(' ')[0]];
                 if (opposite === clicked) {
-                    $(this).css('visibility', 'visible')
+                    $(this).css('visibility', 'visible');
+                    $(this).find('h1.transition-link.home').css('visibility', 'visible');
+                    $(this).find('h1.transition-link.to-page').css('visibility', 'hidden');
                 } else {
                     $(this).css('visibility', 'hidden')
+                    $(this).find('h1.transition-link.home').css('visibility', 'hidden');
+                    $(this).find('h1.transition-link.to-page').css('visibility', 'hidden');
                 }
             });
         }
@@ -480,8 +484,11 @@ var PageTransitions = (function () {
             var trigger = this.className.split(' ')[0];
             if (trigger != 'top'){
                 $(this).css('visibility', 'visible')
+                $(this).find('h1.transition-link.home').css('visibility', 'hidden')
+                $(this).find('h1.transition-link.to-page').css('visibility', 'visible')
             } else {
                 $(this).css('visibility', 'hidden')
+                $(this).find('h1.transition-link.to-page').css('visibility', 'hidden');
             }
         })
     }
