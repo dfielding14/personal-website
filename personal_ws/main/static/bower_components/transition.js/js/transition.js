@@ -488,7 +488,7 @@ var PageTransitions = (function () {
                 $(this).find('h1.transition-link.to-page').css('visibility', 'visible')
             } else {
                 $(this).css('visibility', 'hidden')
-                $(this).find('h1.transition-link.to-page').css('visibility', 'hidden');
+                $(this).find('h1.transition-link.home').css('visibility', 'hidden');
             }
         })
     }
