@@ -3,43 +3,43 @@
 /* move from / to  */
 
 .pt-page-moveToLeft {
-	-webkit-animation: moveToLeft .6s ease both;
-	animation: moveToLeft .6s ease both;
+	-webkit-animation: moveToLeft 1s ease both;
+	animation: moveToLeft 1s ease both;
 }
 
 .pt-page-moveFromLeft {
-	-webkit-animation: moveFromLeft .6s ease both;
-	animation: moveFromLeft .6s ease both;
+	-webkit-animation: moveFromLeft 1s ease both;
+	animation: moveFromLeft 1s ease both;
 }
 
 .pt-page-moveToRight {
-	-webkit-animation: moveToRight .6s ease both;
-	animation: moveToRight .6s ease both;
+	-webkit-animation: moveToRight 1s ease both;
+	animation: moveToRight 1s ease both;
 }
 
 .pt-page-moveFromRight {
-	-webkit-animation: moveFromRight .6s ease both;
-	animation: moveFromRight .6s ease both;
+	-webkit-animation: moveFromRight 1s ease both;
+	animation: moveFromRight 1s ease both;
 }
 
 .pt-page-moveToTop {
-	-webkit-animation: moveToTop .6s ease both;
-	animation: moveToTop .6s ease both;
+	-webkit-animation: moveToTop 1s ease both;
+	animation: moveToTop 1s ease both;
 }
 
 .pt-page-moveFromTop {
-	-webkit-animation: moveFromTop .6s ease both;
-	animation: moveFromTop .6s ease both;
+	-webkit-animation: moveFromTop 1s ease both;
+	animation: moveFromTop 1s ease both;
 }
 
 .pt-page-moveToBottom {
-	-webkit-animation: moveToBottom .6s ease both;
-	animation: moveToBottom .6s ease both;
+	-webkit-animation: moveToBottom 1s ease both;
+	animation: moveToBottom 1s ease both;
 }
 
 .pt-page-moveFromBottom {
-	-webkit-animation: moveFromBottom .6s ease both;
-	animation: moveFromBottom .6s ease both;
+	-webkit-animation: moveFromBottom 1s ease both;
+	animation: moveFromBottom 1s ease both;
 }
 
 /* fade */
