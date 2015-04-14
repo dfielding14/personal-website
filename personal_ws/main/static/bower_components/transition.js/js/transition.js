@@ -491,8 +491,3 @@ var PageTransitions = (function () {
     };
 
 })();
-
-$(document).ready(function() {
-    // initializing page transition.
-    PageTransitions.init();
-});

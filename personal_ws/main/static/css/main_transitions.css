@@ -66,23 +66,6 @@ body {
     transform: translateX(-50%);
 }
 
-.pt-trigger {
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    margin: 10px 0 10px;
-    padding: 0 20px;
-    line-height: 40px;
-    height: 40px;
-    letter-spacing: 1px;
-    width: 100%;
-    cursor: pointer;
-    display: block;
-    font-family: Calibri;
-    box-shadow: 0 3px 0 rgba(0,0,0,0.3);
-
-}
-
 /* Page Styles */
 .pt-page-ontop {
     z-index: 999;

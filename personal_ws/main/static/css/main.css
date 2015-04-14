@@ -55,6 +55,23 @@
   filter: invert(100%);
   -webkit-filter: invert(100%);
 }
+.pt-trigger-container .arrow-buttons {
+  box-shadow: none;
+}
+.pt-trigger-container .arrow-buttons h1.transition-link {
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  transition: border-color 0.8s;
+}
+.pt-trigger-container .arrow-buttons h1.transition-link:hover {
+  border-color: #000000;
+  color: black;
+}
+.pt-trigger-container .arrow-buttons div {
+  position: absolute;
+  box-shadow: none;
+}
 .pt-trigger-container .arrow-buttons img {
   width: 150px;
   height: 100px;
@@ -63,23 +80,55 @@
 }
 .pt-trigger-container .arrow-buttons .top {
   top: -10%;
-  right: 45%;
+  left: 45%;
   visibility: hidden;
 }
+.pt-trigger-container .arrow-buttons .top h1.transition-link {
+  margin: 0;
+  margin-left: 0.9em;
+  margin-top: 2.3em;
+}
 .pt-trigger-container .arrow-buttons .right {
-  transform: rotate(90deg);
   top: 25%;
-  right: 0;
+  right: 10em;
+}
+.pt-trigger-container .arrow-buttons .right .transition-link {
+  top: 26%;
+  right: 2.6em;
+  position: fixed;
+}
+.pt-trigger-container .arrow-buttons .right img {
+  transform: rotate(90deg);
 }
 .pt-trigger-container .arrow-buttons .left {
-  transform: rotate(-90deg);
   top: 25%;
   left: 0;
 }
+.pt-trigger-container .arrow-buttons .left .transition-link {
+  top: 26%;
+  left: 2.7em;
+  position: fixed;
+}
+.pt-trigger-container .arrow-buttons .left img {
+  transform: rotate(-90deg);
+}
 .pt-trigger-container .arrow-buttons .down {
-  transform: rotate(180deg);
-  top: 70%;
+  top: 73%;
   left: 45%;
+}
+.pt-trigger-container .arrow-buttons .down h1.transition-link {
+  margin: 0;
+  margin-left: 9px;
+  padding: 0 0 0 0;
+}
+.pt-trigger-container .arrow-buttons .down img {
+  transform: rotate(180deg);
+}
+.page-content {
+  left: 40%;
+  top: 30%;
+  position: fixed;
+  width: 20em;
 }
 .pt-page-2 {
   background-image: url('../images/TurkishMarbledPaper.jpg');
