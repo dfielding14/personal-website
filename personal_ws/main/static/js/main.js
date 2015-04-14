@@ -5,17 +5,14 @@ $(document).ready(function() {
     // initializing page transition.
     PageTransitions.init();
 
+    // Arrow Keys
+    var directionMap = {37: '.left', 39: '.right', 40: '.down', 38: '.top'};
     $("body").keydown(function(e) {
-           if(e.keyCode == 37) { // left
-               if ($('.left').css('visibility') == 'visible') {
-                   $(".left").trigger("click");
-               }
-           } else if(e.keyCode == 39) { // right
-                $(".right").trigger("click");
-           } else if(e.keyCode == 40) { // down
-                $(".down").trigger("click");
-           } else if(e.keyCode == 38) { // top
-                $(".top").trigger("click")
-           }
-      });
+        if (e.keyCode <= 40 && e.keyCode >= 37) {
+            var direction = directionMap[e.keyCode];
+            if ($(direction).css('visibility') == 'visible') {
+                $(direction).trigger('click');
+            }
+        }
+    });
 });
