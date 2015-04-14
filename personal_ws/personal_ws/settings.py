@@ -37,16 +37,7 @@ WSGI_APPLICATION = 'personal_ws.wsgi.application'
 
 ###---< Database >---###
 
-DATABASES = {
-        'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'personal_ws',
-        'USER': 'drum',
-        'PASSWORD': 'password',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-        }
-}
+DATABASES = {}
 
 ###---< Internationalization >---###
 

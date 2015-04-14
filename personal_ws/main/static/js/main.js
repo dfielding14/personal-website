@@ -7,7 +7,9 @@ $(document).ready(function() {
 
     $("body").keydown(function(e) {
            if(e.keyCode == 37) { // left
-                $(".left").trigger("click");
+               if ($('.left').css('visibility') == 'visible') {
+                   $(".left").trigger("click");
+               }
            } else if(e.keyCode == 39) { // right
                 $(".right").trigger("click");
            } else if(e.keyCode == 40) { // down
